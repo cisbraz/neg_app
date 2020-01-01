@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/12/27 23:46:50.000.375,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\Avaliacao\src\ControleNegociacao\grpAvaliacao.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Avaliacao\src\ControleNegociacao\ControleNegociacao.dproj"/>
+	</Default.Personality>
+</BorlandProject>
