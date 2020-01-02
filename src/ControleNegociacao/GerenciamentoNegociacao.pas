@@ -280,7 +280,7 @@ begin
   end;
 
   qryNegociacao.ParamByName('DT_INI').AsDate := dtIni.Date;
-  qryNegociacao.ParamByName('DT_FIM').AsDate := dtIni.Date;
+  qryNegociacao.ParamByName('DT_FIM').AsDate := dtFim.Date;
   qryNegociacao.Open;
 
   qryNegociacao.FetchAll;

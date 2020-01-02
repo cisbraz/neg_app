@@ -12,7 +12,9 @@ uses
   Produtor in 'Produtor.pas' {uFrmProdutor},
   Distribuidor in 'Distribuidor.pas' {uFrmDistribuidor},
   Negociacao in 'Negociacao.pas' {uFrmNegociacao},
-  GerenciamentoNegociacao in 'GerenciamentoNegociacao.pas' {uFrmGerenciamentoNegociacao};
+  GerenciamentoNegociacao in 'GerenciamentoNegociacao.pas' {uFrmGerenciamentoNegociacao},
+  Parametro in 'Parametro.pas' {uFrmParametro},
+  cParametro in 'Persistencia\cParametro.pas';
 
 {$R *.res}
 

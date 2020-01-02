@@ -1,0 +1,18 @@
+01/01/2020 20:18:23-> Alterar, tabela: PRODUTO, params: :NOME_PRODUTO,:PRECO_UNITARIO,:ATIVO
+01/01/2020 20:18:23-> Alterar, tabela: PRODUTO, values: VENENO,10,N
+<------------------>
+01/01/2020 20:19:34-> Alterar, tabela: PRODUTO, params: :NOME_PRODUTO,:PRECO_UNITARIO,:ATIVO
+01/01/2020 20:19:34-> Alterar, tabela: PRODUTO, values: VENENO,10,N
+<------------------>
+01/01/2020 20:19:47-> Alterar, tabela: DISTRIBUIDOR, params: :RAZAO_SOCIAL,:ATIVO
+01/01/2020 20:19:47-> Alterar, tabela: DISTRIBUIDOR, values: DISTRIBUIDOR AGROTEC,S
+<------------------>
+01/01/2020 21:23:53-> Inserir, tabela: PARAMETRO, params: :NOME_CAMPO,:VALOR
+01/01/2020 21:23:53-> Inserir, tabela: PARAMETRO, values: URL_ACESSO_NEGOCIACAO,http://localhost:63312/
+<------------------>
+01/01/2020 21:23:59-> Alterar, tabela: PARAMETRO, params: :VALOR
+01/01/2020 21:23:59-> Alterar, tabela: PARAMETRO, values: http://localhost:63312
+<------------------>
+01/01/2020 21:25:09-> Alterar, tabela: PARAMETRO, params: :VALOR
+01/01/2020 21:25:09-> Alterar, tabela: PARAMETRO, values: http://localhost:63312
+<------------------>

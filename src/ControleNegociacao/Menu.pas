@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, System.ImageList,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus,
   Vcl.ImgList, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.AppEvnts;
 
 type
@@ -16,14 +16,17 @@ type
     btnProduto: TButton;
     btnProdutor: TButton;
     btnDistribuidor: TButton;
-    Button4: TButton;
-    Button5: TButton;
+    btnNegociacao: TButton;
+    btnGerenNegociacao: TButton;
+    tbsConfiguracao: TTabSheet;
+    btnParametro: TButton;
     procedure btnProdutoClick(Sender: TObject);
     procedure btnProdutorClick(Sender: TObject);
     procedure btnDistribuidorClick(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
+    procedure btnNegociacaoClick(Sender: TObject);
+    procedure btnGerenNegociacaoClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure btnParametroClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,11 +41,16 @@ implementation
 {$R *.dfm}
 
 uses Produtor, Funcoes, Persistencia, Produto, Distribuidor, Negociacao,
-  GerenciamentoNegociacao;
+  GerenciamentoNegociacao, Parametro;
 
 procedure TuFrmMenu.btnDistribuidorClick(Sender: TObject);
 begin
   ShowChild('uFrmDistribuidor');
+end;
+
+procedure TuFrmMenu.btnParametroClick(Sender: TObject);
+begin
+  ShowChild('uFrmParametro');
 end;
 
 procedure TuFrmMenu.btnProdutoClick(Sender: TObject);
@@ -55,12 +63,12 @@ begin
   ShowChild('uFrmProdutor');
 end;
 
-procedure TuFrmMenu.Button4Click(Sender: TObject);
+procedure TuFrmMenu.btnNegociacaoClick(Sender: TObject);
 begin
   ShowChild('uFrmNegociacao');
 end;
 
-procedure TuFrmMenu.Button5Click(Sender: TObject);
+procedure TuFrmMenu.btnGerenNegociacaoClick(Sender: TObject);
 begin
   ShowChild('uFrmGerenciamentoNegociacao');
 end;
@@ -75,13 +83,15 @@ initialization
                    TuFrmProduto,
                    TuFrmDistribuidor,
                    TuFrmNegociacao,
-                   TuFrmGerenciamentoNegociacao]);
+                   TuFrmGerenciamentoNegociacao,
+                   TuFrmParametro]);
 
 finalization
   UnRegisterClasses([TuFrmProdutor,
                      TuFrmProduto,
                      TuFrmDistribuidor,
                      TuFrmNegociacao,
-                     TuFrmGerenciamentoNegociacao]);
+                     TuFrmGerenciamentoNegociacao,
+                     TuFrmParametro]);
 
 end.

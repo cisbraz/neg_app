@@ -6,8 +6,8 @@
     <Transaction>2019/12/24 09:18:30.000.632,C:\Avaliacao\src\ControleNegociacao\uFrmMenu.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2019/12/24 09:18:58.000.070,C:\Avaliacao\src\ControleNegociacao\prjControleNegociacao.dproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2019/12/24 09:24:48.000.447,=C:\Avaliacao\src\ControleNegociacao\Unit2.pas</Transaction>
-    <Transaction>2019/12/24 09:25:15.000.071,C:\Avaliacao\src\ControleNegociacao\uFrmProdutor.pas=C:\Avaliacao\src\ControleNegociacao\Unit2.pas</Transaction>
     <Transaction>2019/12/24 09:25:15.000.071,C:\Avaliacao\src\ControleNegociacao\uFrmProdutor.dfm=C:\Avaliacao\src\ControleNegociacao\Unit2.dfm</Transaction>
+    <Transaction>2019/12/24 09:25:15.000.071,C:\Avaliacao\src\ControleNegociacao\uFrmProdutor.pas=C:\Avaliacao\src\ControleNegociacao\Unit2.pas</Transaction>
     <Transaction>2019/12/24 09:25:50.000.773,C:\Avaliacao\src\ControleNegociacao\Menu.pas=C:\Avaliacao\src\ControleNegociacao\uFrmMenu.pas</Transaction>
     <Transaction>2019/12/24 09:25:50.000.773,C:\Avaliacao\src\ControleNegociacao\Menu.dfm=C:\Avaliacao\src\ControleNegociacao\uFrmMenu.dfm</Transaction>
     <Transaction>2019/12/24 09:25:58.000.086,C:\Avaliacao\src\ControleNegociacao\Produtor.dfm=C:\Avaliacao\src\ControleNegociacao\uFrmProdutor.dfm</Transaction>
@@ -16,14 +16,14 @@
     <Transaction>2019/12/24 09:36:34.000.331,C:\Avaliacao\src\ControleNegociacao\Repositorio\Funcoes.pas=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/24 09:56:51.000.502,C:\Avaliacao\src\ControleNegociacao\Produtor.pas=</Transaction>
     <Transaction>2019/12/24 09:57:59.000.829,=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
-    <Transaction>2019/12/24 09:58:24.000.181,C:\Avaliacao\src\ControleNegociacao\CadastroBase.pas=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/24 09:58:24.000.181,C:\Avaliacao\src\ControleNegociacao\CadastroBase.dfm=C:\Avaliacao\src\ControleNegociacao\Unit1.dfm</Transaction>
+    <Transaction>2019/12/24 09:58:24.000.181,C:\Avaliacao\src\ControleNegociacao\CadastroBase.pas=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/24 10:15:09.000.571,=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
-    <Transaction>2019/12/24 10:15:32.000.051,C:\Avaliacao\src\ControleNegociacao\Produtor.pas=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/24 10:15:32.000.051,C:\Avaliacao\src\ControleNegociacao\Produtor.dfm=C:\Avaliacao\src\ControleNegociacao\Unit1.dfm</Transaction>
+    <Transaction>2019/12/24 10:15:32.000.051,C:\Avaliacao\src\ControleNegociacao\Produtor.pas=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/24 10:44:42.000.590,=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
-    <Transaction>2019/12/24 10:46:36.000.303,C:\Avaliacao\src\ControleNegociacao\ModuloBanco.pas=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/24 10:46:36.000.303,C:\Avaliacao\src\ControleNegociacao\ModuloBanco.dfm=C:\Avaliacao\src\ControleNegociacao\Unit1.dfm</Transaction>
+    <Transaction>2019/12/24 10:46:36.000.303,C:\Avaliacao\src\ControleNegociacao\ModuloBanco.pas=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/24 10:48:38.000.837,=C:\Avaliacao\src\ControleNegociacao\Persistencia\Persistencia.pas</Transaction>
     <Transaction>2019/12/24 13:54:28.000.376,C:\Avaliacao\src\ControleNegociacao\ControleNegociacao.dproj=C:\Avaliacao\src\ControleNegociacao\prjControleNegociacao.dproj</Transaction>
     <Transaction>2019/12/27 23:18:47.000.043,=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
@@ -46,8 +46,40 @@
     <Transaction>2019/12/30 14:31:59.000.191,=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
     <Transaction>2019/12/30 14:32:33.000.824,C:\Avaliacao\src\ControleNegociacao\Unit1.dfm=C:\Avaliacao\src\ControleNegociacao\AcompanhamentoNegociacao.dfm</Transaction>
     <Transaction>2019/12/30 14:32:33.000.824,C:\Avaliacao\src\ControleNegociacao\Unit1.pas=C:\Avaliacao\src\ControleNegociacao\AcompanhamentoNegociacao.pas</Transaction>
-    <Transaction>2019/12/30 14:33:25.000.701,C:\Avaliacao\src\ControleNegociacao\AcompanhamentoNegociacao.pas=C:\Avaliacao\src\ControleNegociacao\GerenciamentoNegociacao.pas</Transaction>
     <Transaction>2019/12/30 14:33:25.000.701,C:\Avaliacao\src\ControleNegociacao\AcompanhamentoNegociacao.dfm=C:\Avaliacao\src\ControleNegociacao\GerenciamentoNegociacao.dfm</Transaction>
-    <Transaction>2019/12/31 10:14:27.589,=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
-  </Transactions>
+    <Transaction>2019/12/30 14:33:25.000.701,C:\Avaliacao\src\ControleNegociacao\AcompanhamentoNegociacao.pas=C:\Avaliacao\src\ControleNegociacao\GerenciamentoNegociacao.pas</Transaction>
+    <Transaction>2019/12/31 10:14:27.000.589,=C:\Avaliacao\src\ControleNegociacao\Unit1.pas</Transaction>
+    <Transaction>2020/01/01 20:50:43.642,=C:\neg_app\src\ControleNegociacao\AcessoExterno.pas</Transaction>
+    <Transaction>2020/01/01 21:01:25.074,C:\neg_app\src\ControleNegociacao\Parametro.pas=C:\neg_app\src\ControleNegociacao\AcessoExterno.pas</Transaction>
+    <Transaction>2020/01/01 21:01:25.074,C:\neg_app\src\ControleNegociacao\Parametro.dfm=C:\neg_app\src\ControleNegociacao\AcessoExterno.dfm</Transaction>
+    <Transaction>2020/01/01 21:03:44.576,C:\neg_app\src\ControleNegociacao\Parametro.pas=</Transaction>
+    <Transaction>2020/01/01 21:03:54.721,=C:\neg_app\src\ControleNegociacao\Parametro.pas</Transaction>
+    <Transaction>2020/01/01 21:04:28.650,=C:\neg_app\src\ControleNegociacao\Persistencia\cParametro.pas</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Persistencia"/>
+    <File Path="Persistencia\Persistencia.pas"/>
+    <File Path="Persistencia\cParametro.pas"/>
+    <File Path="Repositorio"/>
+    <File Path="Repositorio\Funcoes.pas"/>
+    <File Path="CadastroBase.pas"/>
+    <File Path="CadastroBase.dfm"/>
+    <File Path="Distribuidor.pas"/>
+    <File Path="Distribuidor.dfm"/>
+    <File Path="GerenciamentoNegociacao.pas"/>
+    <File Path="GerenciamentoNegociacao.dfm"/>
+    <File Path="Menu.pas"/>
+    <File Path="Menu.dfm"/>
+    <File Path="ModuloBanco.pas"/>
+    <File Path="ModuloBanco.dfm"/>
+    <File Path="ModuloCadastro.pas"/>
+    <File Path="ModuloCadastro.dfm"/>
+    <File Path="Negociacao.pas"/>
+    <File Path="Negociacao.dfm"/>
+    <File Path="Produto.pas"/>
+    <File Path="Produto.dfm"/>
+    <File Path="Produtor.pas"/>
+    <File Path="Produtor.dfm"/>
+    <File Path="Parametro.pas"/>
+    <File Path="Parametro.dfm"/>
+  </ProjectSortOrder>
 </BorlandProject>

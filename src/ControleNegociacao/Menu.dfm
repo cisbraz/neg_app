@@ -60,23 +60,36 @@ object uFrmMenu: TuFrmMenu
     object tbsNegociacao: TTabSheet
       Caption = 'Negocia'#231#245'es'
       ImageIndex = 1
-      object Button4: TButton
+      object btnNegociacao: TButton
         Left = 0
         Top = 0
         Width = 121
         Height = 38
         Caption = 'Negocia'#231#227'o'
         TabOrder = 0
-        OnClick = Button4Click
+        OnClick = btnNegociacaoClick
       end
-      object Button5: TButton
+      object btnGerenNegociacao: TButton
         Left = 125
         Top = 0
         Width = 194
         Height = 38
         Caption = 'Gerenciamento de negocia'#231#245'es'
         TabOrder = 1
-        OnClick = Button5Click
+        OnClick = btnGerenNegociacaoClick
+      end
+    end
+    object tbsConfiguracao: TTabSheet
+      Caption = 'Configura'#231#245'es'
+      ImageIndex = 2
+      object btnParametro: TButton
+        Left = 0
+        Top = -1
+        Width = 121
+        Height = 38
+        Caption = 'Par'#226'metros'
+        TabOrder = 0
+        OnClick = btnParametroClick
       end
     end
   end
@@ -86,7 +99,7 @@ object uFrmMenu: TuFrmMenu
     Left = 18
     Top = 75
     Bitmap = {
-      494C010108006800FC0124002400FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010108006800040224002400FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000900000006C000000010020000000000000F3
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

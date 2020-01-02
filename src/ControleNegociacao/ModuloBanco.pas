@@ -6,10 +6,9 @@ uses
   System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.PG,
-  FireDAC.Phys.PGDef, FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client,
+  FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client,
   FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt,
-  FireDAC.Comp.DataSet, Forms, FireDAC.Phys.Oracle, FireDAC.Phys.OracleDef,
-  FireDAC.Phys.FB, FireDAC.Phys.FBDef;
+  FireDAC.Comp.DataSet, Forms, FireDAC.Phys.FB;
 
 type
   TdtmBanco = class(TDataModule)
@@ -76,11 +75,11 @@ begin
       end;
     end else begin
       Rewrite(arq);
-      Writeln(arq, 'Database=C:\Avaliacao\data\BRAZ.FDB');
+      Writeln(arq, 'Database=C:\neg_app\data\BRAZ.FDB');
       Writeln(arq, 'UserName=sysdba');
       Writeln(arq, 'Password=masterkey');
       CloseFile(arq);
-      cConexao.Params.Add('Database=C:\Avaliacao\data\BRAZ.FDB');
+      cConexao.Params.Add('Database=C:\neg_app\data\BRAZ.FDB');
       cConexao.Params.Add('User_Name=sysdba');
       cConexao.Params.Add('Password=masterkey');
     end;

@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, CadastroBase, Vcl.ComCtrls, Vcl.ToolWin,
-  Vcl.StdCtrls, CurrencyEdit, Vcl.Mask, System.ImageList, Vcl.ImgList;
+  Vcl.StdCtrls, CurrencyEdit, Vcl.Mask, Vcl.ImgList;
 
 type
   TuFrmDistribuidor = class(TuFrmBase)

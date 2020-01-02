@@ -111,7 +111,7 @@ implementation
 
 {$R *.dfm}
 
-uses Menu, Funcoes, ModuloCadastro, Persistencia;
+uses Menu, Funcoes, ModuloCadastro, Persistencia, cParametro;
 
 procedure EditarNegociacao(ACodigo : Double);
 var
@@ -423,28 +423,26 @@ var
   params: TIdMultipartFormDataStream;
   ss: TStringStream;
   IdHTTP : TIdHTTP;
+  url : string;
 begin
-
-  //params := TIdMultiPartFormDataStream.Create;
-  //ss := TStringStream.Create('');
-  //params.AddFormField('NegociacaoId', edtCodigo.Value);
-
+  params := TIdMultiPartFormDataStream.Create;
+  ss := TStringStream.Create('');
   if (Questionar('Ao aprovar não poderá mais alterar a negociação! Deseja continuar?')) then begin
-  {
-    Try
+    url := RetornaParametro('URL_ACESSO_NEGOCIACAO');
+    try
       IdHTTP := TIdHTTP.Create();
       IdHTTP.Request.CustomHeaders.Clear;
       IdHTTP.Request.Clear;
-      IdHTTP.Request.ContentType := 'multipart/form-data; boundary=----BOUNDARY';
+      IdHTTP.Request.ContentType := 'application/json';
       IdHTTP.Request.CharSet := 'utf-8';
-      IdHTTP.Request.CustomHeaders.AddValue('X-Autntiq-Api', 'xxxxxxxxxxx');
     finally
-      IdHTTP.Post('https://api.xxxx.com.br/documentos.json', params, ss);
-    end;   }
+      IdHTTP.Post(url + '/api/negociacao/Liberanegociacoes?negociacaoId='+edtCodigo.Text, params, ss);
+    end;
+    Informar('Solicitação enviada com sucesso!');
 
-
+    {Validação manual no delphi, caso desejar utilizar é somente trocar o comentario.
     ValidarNegociacao(edtCnpjProdutor.Text, edtCnpjDistribuidor.Text, True);
-   { Alterar('CAPA_NEGOCIACAO',
+    Alterar('CAPA_NEGOCIACAO',
             ['NEGOCIACAO_ID'],
             [edtCodigo.Value],
             ['STATUS',
