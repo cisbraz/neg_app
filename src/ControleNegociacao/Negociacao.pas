@@ -6,7 +6,8 @@ uses
   Windows, Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, CadastroBase, Vcl.ComCtrls, Vcl.ToolWin,
   Vcl.StdCtrls, Vcl.Buttons, Vcl.Mask, Data.DB, Vcl.Grids, Vcl.DBGrids,
-  CurrencyEdit, Datasnap.DBClient, HTTPApp, IdHTTP, IdMultipartFormData;
+  CurrencyEdit, Datasnap.DBClient, HTTPApp, IdHTTP, IdMultipartFormData,
+  Vcl.ExtCtrls;
 
 type
   TuFrmNegociacao = class(TForm)
@@ -67,6 +68,9 @@ type
     cdsItensNegociacaoOPERACAO: TStringField;
     btnProduto: TSpeedButton;
     btnConcluir: TToolButton;
+    pnlAtualizar: TPanel;
+    tmrAtualizar: TTimer;
+    tmrMinuto: TTimer;
     procedure FormShow(Sender: TObject);
     procedure btnFecharClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
@@ -94,7 +98,10 @@ type
     procedure btnAprovarClick(Sender: TObject);
     procedure btnConcluirClick(Sender: TObject);
     procedure btnCancelarNegociacaoClick(Sender: TObject);
+    procedure tmrMinutoTimer(Sender: TObject);
+    procedure tmrAtualizarTimer(Sender: TObject);
   private
+    MinutosAtualizar : Integer;
     procedure Controle(AEditando: Boolean; AConcluido: Boolean = False);
     function Validar: Boolean;
     { Private declarations }
@@ -367,6 +374,32 @@ begin
   Controle(False);
 end;
 
+procedure TuFrmNegociacao.tmrAtualizarTimer(Sender: TObject);
+var
+  key : Word;
+  shift : TShiftState;
+  codigo : Double;
+begin
+  key := VK_RETURN;
+  shift := [];
+  pnlAtualizar.Visible := False;
+  MinutosAtualizar := 6;
+  tmrMinuto.Enabled := False;
+  tmrAtualizar.Enabled := False;
+  codigo := edtCodigo.Value;
+  Controle(False);
+  edtCodigo.Value := codigo;
+  edtCodigoKeyDown(edtCodigo, key, shift);
+end;
+
+procedure TuFrmNegociacao.tmrMinutoTimer(Sender: TObject);
+begin
+  MinutosAtualizar := MinutosAtualizar - 1;
+  pnlAtualizar.Visible := True;
+  pnlAtualizar.Caption := 'Verificando aprovação... ' + IntToStr(MinutosAtualizar);
+  pnlAtualizar.Repaint;
+end;
+
 procedure TuFrmNegociacao.btnAdItemClick(Sender: TObject);
 begin
   if (edtProduto.Value > 0) then begin
@@ -439,6 +472,9 @@ begin
       IdHTTP.Post(url + '/api/negociacao/Liberanegociacoes?negociacaoId='+edtCodigo.Text, params, ss);
     end;
     Informar('Solicitação enviada com sucesso!');
+    MinutosAtualizar := 6;
+    tmrAtualizar.Enabled := True;
+    tmrMinuto.Enabled := True;
 
     {Validação manual no delphi, caso desejar utilizar é somente trocar o comentario.
     ValidarNegociacao(edtCnpjProdutor.Text, edtCnpjDistribuidor.Text, True);

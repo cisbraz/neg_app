@@ -40959,6 +40959,20 @@ object uFrmNegociacao: TuFrmNegociacao
       end
     end
   end
+  object pnlAtualizar: TPanel
+    Left = 248
+    Top = 216
+    Width = 313
+    Height = 80
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 13
+    Visible = False
+  end
   object cdsItensNegociacao: TClientDataSet
     Active = True
     Aggregates = <
@@ -41044,5 +41058,18 @@ object uFrmNegociacao: TuFrmNegociacao
     DataSet = cdsItensNegociacao
     Left = 40
     Top = 352
+  end
+  object tmrAtualizar: TTimer
+    Enabled = False
+    Interval = 6000
+    OnTimer = tmrAtualizarTimer
+    Left = 40
+    Top = 408
+  end
+  object tmrMinuto: TTimer
+    Enabled = False
+    OnTimer = tmrMinutoTimer
+    Left = 40
+    Top = 456
   end
 end

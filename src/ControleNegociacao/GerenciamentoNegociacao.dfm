@@ -182,14 +182,12 @@ object uFrmGerenciamentoNegociacao: TuFrmGerenciamentoNegociacao
       Width = 97
       Height = 17
       Caption = 'Pendentes'
-      Checked = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      State = cbChecked
       TabOrder = 0
       OnClick = chkPendenteClick
     end
@@ -199,14 +197,12 @@ object uFrmGerenciamentoNegociacao: TuFrmGerenciamentoNegociacao
       Width = 97
       Height = 13
       Caption = 'Aprovadas'
-      Checked = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      State = cbChecked
       TabOrder = 1
       OnClick = chkPendenteClick
     end
@@ -216,14 +212,12 @@ object uFrmGerenciamentoNegociacao: TuFrmGerenciamentoNegociacao
       Width = 97
       Height = 17
       Caption = 'Canceladas'
-      Checked = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      State = cbChecked
       TabOrder = 2
       OnClick = chkPendenteClick
     end
@@ -233,14 +227,12 @@ object uFrmGerenciamentoNegociacao: TuFrmGerenciamentoNegociacao
       Width = 97
       Height = 17
       Caption = 'Conclu'#237'das'
-      Checked = True
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      State = cbChecked
       TabOrder = 3
       OnClick = chkPendenteClick
     end
@@ -557,7 +549,7 @@ object uFrmGerenciamentoNegociacao: TuFrmGerenciamentoNegociacao
     Left = 35
     Top = 135
     Content = {
-      414442530B009F2562040000FF00010001FF02FF0304001A0000006300640073
+      414442530B00922D62040000FF00010001FF02FF0304001A0000006300640073
       004E00650067006F00630069006100630061006F000500000000000600000700
       32000000080000FF09FF0A04001A0000004E00450047004F0043004900410043
       0041004F005F00490044000B00010000000D000C000E00010F00011000011100

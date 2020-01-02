@@ -90,11 +90,13 @@ begin
   inherited;
   if (edtNomeProduto.Text = EmptyStr) then begin
     Exclamar('O nome do produto deve ser informado!');
+    edtNomeProduto.SetFocus;
     Abort;
   end;
 
   if (edtPreco.Value <= 0) then begin
     Exclamar('O preço deverá ser informado!');
+    edtPreco.SetFocus;
     Abort;
   end;
 
